@@ -1,4 +1,4 @@
 # Flow
 This is a game similar to Flow on the appstore. 
 
-To run enter the command: # java -jar Flow.jar
+To run in your flow folder: java -jar Flow.jar
