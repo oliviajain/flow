@@ -82,7 +82,6 @@ public class FlowController implements java.awt.event.MouseListener, MouseMotion
     }
   }
   
-
   public void mouseDragged(MouseEvent evt)
   {
     int r = view.getFlowPanel().getRow(evt.getY());
@@ -111,21 +110,12 @@ public class FlowController implements java.awt.event.MouseListener, MouseMotion
   {
     processClick(evt);
   }
-  
-
-
 
   public void mouseEntered(MouseEvent arg0) {}
   
-
-
   public void mouseExited(MouseEvent arg0) {}
-  
-
 
   public void mouseMoved(MouseEvent arg0) {}
-  
-
 
   public void actionPerformed(ActionEvent e)
   {
