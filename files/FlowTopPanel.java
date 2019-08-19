@@ -4,7 +4,6 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-
 public class FlowTopPanel
   extends JPanel
 {
@@ -24,8 +23,7 @@ public class FlowTopPanel
     setLayout(null);
     setBounds(0, 30, 635, 635);
     setBackground(new Color(0, 0, 0, 60));
-    
-
+   
     welcomeLabel = new JLabel("Welcome To");
     welcomeLabel.setFont(new Font("SansSerif", 1, 70));
     welcomeLabel.setForeground(Color.white);
@@ -43,7 +41,6 @@ public class FlowTopPanel
     
     northPanel.add(welcomeLabel);
     
-
     flowLabel = new JLabel("FLOW");
     flowLabel.setFont(new Font("SansSerif", 1, 160));
     flowLabel.setForeground(Color.cyan);
@@ -54,7 +51,6 @@ public class FlowTopPanel
     flowGap = ((int)(welcomeLabel.getPreferredSize().getHeight() + 20.0D));
     resetFlowLabel();
     flowLabelPanel.add(flowLabel);
-    
 
     instructions = new JLabel("Instructions: Create paths between same-colored tiles.");
     instructions1 = new JLabel("Each board is complete if all paths are completed without overlap.");
@@ -67,7 +63,6 @@ public class FlowTopPanel
     instructions1.setForeground(Color.white);
     instructions2.setForeground(Color.white);
     
-
     JPanel instructionsPanel = new JPanel();
     instructionsPanel.setOpaque(false);
     
@@ -82,7 +77,6 @@ public class FlowTopPanel
     instructionsPanel.add(instructions);
     instructionsPanel.add(instructions1);
     instructionsPanel.add(instructions2);
-    
 
     startGame = new JLabel("Start Game");
     startGame.setFont(new Font("SansSerif", 1, 65));
@@ -101,15 +95,13 @@ public class FlowTopPanel
       (int)startGame.getPreferredSize().getHeight() + extraHeight);
     
     startGamePanel.add(startGame);
-    
-
+   
     add(northPanel);
     add(flowLabelPanel);
     add(instructionsPanel);
     add(startGamePanel);
   }
   
-
   public void resetFlowLabel()
   {
     int flowStartLocation = (int)((getWidth() - flowLabel.getPreferredSize().getWidth()) / 2.0D);
